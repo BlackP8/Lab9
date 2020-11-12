@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.ListView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.ColumnConstraints?>
+<?import javafx.scene.layout.GridPane?>
+<?import javafx.scene.layout.RowConstraints?>
+<?import javafx.scene.text.Font?>
+
+<GridPane alignment="center" hgap="10" vgap="10" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="sample.Controller">
+   <columnConstraints>
+      <ColumnConstraints />
+   </columnConstraints>
+   <rowConstraints>
+      <RowConstraints />
+   </rowConstraints>
+   <children>
+      <AnchorPane prefHeight="400.0" prefWidth="550.0">
+         <children>
+            <Label fx:id="lblCards" layoutX="14.0" layoutY="14.0" onDragDetected="#onDragDetected" onDragDropped="#onListViewDragDropped" onDragOver="#onListViewDragOver" style="-fx-border-color: black;" text="Семерка черви" textAlignment="CENTER">
+               <font>
+                  <Font name="Times New Roman" size="14.0" />
+               </font>
+               <padding>
+                  <Insets bottom="10.0" left="10.0" right="10.0" top="10.0" />
+               </padding>
+            </Label>
+            <ListView fx:id="lstSpades" layoutX="9.0" layoutY="88.0" onDragDetected="#onDragDetected" onDragDropped="#onListViewDragDropped" onDragOver="#onListViewDragOver" prefHeight="300.0" prefWidth="120.0" style="-fx-background-color: black;" />
+            <ListView fx:id="lstHearts" layoutX="145.0" layoutY="88.0" onDragDetected="#onDragDetected" onDragDropped="#onListViewDragDropped" onDragOver="#onListViewDragOver" prefHeight="300.0" prefWidth="120.0" style="-fx-background-color: red;" />
+            <ListView fx:id="lstClubs" layoutX="283.0" layoutY="88.0" onDragDetected="#onDragDetected" onDragDropped="#onListViewDragDropped" onDragOver="#onListViewDragOver" prefHeight="300.0" prefWidth="120.0" style="-fx-background-color: black;" />
+            <ListView fx:id="lstDiamonds" layoutX="416.0" layoutY="88.0" onDragDetected="#onDragDetected" onDragDropped="#onListViewDragDropped" onDragOver="#onListViewDragOver" prefHeight="300.0" prefWidth="120.0" style="-fx-background-color: red;" />
+            <Label layoutX="14.0" layoutY="71.0" text="Пики">
+               <font>
+                  <Font name="Times New Roman" size="14.0" />
+               </font>
+            </Label>
+            <Label layoutX="145.0" layoutY="70.0" text="Черви" textFill="RED">
+               <font>
+                  <Font name="Times New Roman" size="14.0" />
+               </font>
+            </Label>
+            <Label layoutX="283.0" layoutY="69.0" text="Крести">
+               <font>
+                  <Font name="Times New Roman" size="14.0" />
+               </font>
+            </Label>
+            <Label layoutX="416.0" layoutY="68.0" text="Буби" textFill="RED">
+               <font>
+                  <Font name="Times New Roman" size="14.0" />
+               </font>
+            </Label>
+         </children>
+      </AnchorPane>
+   </children>
+</GridPane>
